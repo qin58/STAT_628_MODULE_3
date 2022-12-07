@@ -13,7 +13,9 @@ kws = list('roast_beef', 'customer_service', 'freaky_fast', 'staff_friendly',
            'wont_back', 'turkey_bacon', 'big_kahuna', 'order_wrong')
 histogram <- function(df) {
   ggplot(df, aes(x=compound)) +
-    geom_histogram(color="black", fill="white") +
+    geom_histogram(color="darkblue", fill="lightblue") +
+    geom_vline(aes(xintercept=0),color="blue", linetype="dashed", size=1)+
+    labs(x="Sentiment Score") +
     ggtitle("Distribution of Sentiment") 
 }
 
