@@ -22,13 +22,13 @@ server <- function(input, output) {
   
   output$text <- renderText({
     paste("Median Sentiment (between -1 and 1): ",
-          median(df$compound[df$state %in% input$State & df[colnames(df) == input$Key_Words] == 1]),
+          median(df$compound[df$brand %in% input$Brand & df$state %in% input$State & df[colnames(df) == input$Key_Words] == 1]),
           sep = "")
     
   }) 
   
   output$hist <- renderPlot({
-    histogram(df[df$state %in% input$State & df[colnames(df) == input$Key_Words] == 1, ])
+    histogram(df[df$brand %in% input$Brand & df$state %in% input$State & df[colnames(df) == input$Key_Words] == 1, ])
   })
   #output$table <- renderTable(df[df$state %in% input$State & df[colnames(df) == input$Key_Words] == 1, ])
 }

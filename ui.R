@@ -23,9 +23,11 @@ ui <- fluidPage(
   ),  
   
   selectInput("State", label = "State", choices = unique(df$state), multiple = TRUE, selected = unique(df$state)),
+  selectInput("Brand", label = "Brand", choices = unique(df$brand), multiple = TRUE, selected = unique(df$brand)),
   selectInput("Key_Words", label = "Kw", choices = kws, multiple = FALSE),
   
   textOutput("text"),
   plotOutput("hist"),
+  "Thank you for using our app, if you have any questions, please contact: zou47@wisc.edu"
   #tableOutput('table')
 )
