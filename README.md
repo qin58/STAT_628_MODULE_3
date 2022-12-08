@@ -5,7 +5,7 @@ This Yelp user review project is done by Fall 2022 STAT 629 Module 3 Group 17 me
 This directory contains combined business and text review data of all six sandwich shop franchises in the Yelp 2022 dataset.
 
 ## Restaurant Data
-This directory contains individual 
+This directory contains individual sandwich franchise data split from the full dataset.
 
 ## Word Count CSV
 This directory contains the unigram and bigrams of the complete user review corpus for our data in seperate .csv files.
