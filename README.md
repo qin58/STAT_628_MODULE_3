@@ -10,7 +10,7 @@ This directory contains individual sandwich franchise data split from the full d
 ## Word Count CSV
 This directory contains the unigram and bigrams of the complete user review corpus for our data in seperate .csv files.
 
-## Shiny App
+## Shiny App 
 This directory contains UI and server R documentation for our Shiny application.
 
 ## Code
