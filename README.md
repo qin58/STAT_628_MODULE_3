@@ -8,7 +8,7 @@ This directory contains combined business and text review data of all six sandwi
 This directory contains individual 
 
 ## Word Count CSV
-This directory contains
+This directory contains the unigram and bigrams of the complete user review corpus for our data in seperate .csv files.
 
 ## Shiny App
 This directory contains UI and server R documentation for our Shiny application.
